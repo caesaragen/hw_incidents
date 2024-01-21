@@ -99,12 +99,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- <button type="submit"id="ad"
+                                     <button type="submit"id="ad"
                                             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                                         <i class="fas fa-plus"></i>
                                         Add Incident
-                                    </button> --}}
-{{-- <div id="incident-forms"></div> --}}
+                                    </button> 
+{{-- <div id="incident-forms"></div> 
 
 <hr class="mt-6 border-b-1 border-blueGray-300">
 

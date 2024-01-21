@@ -26,7 +26,7 @@
             </div>
 
             <div class="mb-6">
-                <x-input-label for="date_of_incident" class="mb-2">{{ __('Date of Incident') }}</x-input-label>
+                <x-input-label for="date_of_incident" class="mb-2">{{ __('Date of Reporting') }}</x-input-label>
                 <x-text-input id="date_of_incident" name="date_of_incident" type="date" placeholder="Date of Incident" />
                 <x-input-error :messages="$errors->get('date_of_incident')" class="mt-2" />
             </div>

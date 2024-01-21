@@ -21,6 +21,16 @@ class IncidentAssessment extends Model
         'time_of_incident',
         'latitude',
         'longitude',
+        'ranger_in_charge',
+        'mode_of_transport',
+        'no_vehicle_used',
+        'fuel',
+        'no_rangers',
+        'batteries',
+        'combo_rations',
+        'fresh_rations',
+        'ammunition',
+        'rounds',
     ];
 
     protected $casts = [

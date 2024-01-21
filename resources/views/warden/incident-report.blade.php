@@ -1,3 +1,173 @@
+{{-- <style>
+    .section {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-div {
+        /* padding-left: 1rem;
+        padding-right: 1rem; */
+        margin-top: 1.5rem;
+        width: 100%;
+
+
+
+        @media (min-width: 1024px) {
+            width: 66.666667%;
+        }
+    }
+
+    .inner-div {
+        display: flex;
+        position: relative;
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        border-width: 0;
+        /* width: 100%; */
+        min-width: 0;
+        overflow-wrap: break-word;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .inner-div2 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        background-color: #ffffff;
+    }
+
+    .header-div {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+    }
+
+    .heading {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+    }
+
+    .div-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        /* width: 100%; */
+
+        @media (min-width: 1024px) {
+            width: 50%;
+        }
+    }
+
+    .div-wrapper-inner {
+        position: relative;
+        margin-bottom: 0.75rem;
+        /* width: 50%; */
+    }
+
+    .label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .input {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid #E2E8F0;
+        border-radius: 0.375rem;
+        /* width: 100%; */
+        padding: 0.5rem 1rem;
+        color: #4A5568;
+        line-height: 1.5;
+        outline: none;
+        /* padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 0.25rem;
+        border-width: 0;
+        width: 50%;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        background-color: #ffffff;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+        transition-duration: 150ms;
+        transition-timing-function: linear;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); */
+    }
+
+    .h6 {
+        margin-top: 0.75rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .h6-div {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-top: 0;
+        flex: 1 1 auto;
+        background-color: #ffffff;
+
+
+
+        @media (min-width: 1024px) {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+    }
+
+    .flex-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hr {
+        margin-top: 1.5rem;
+    }
+
+    .div-outer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+
+
+
+        @media (min-width: 1024px) {}
+    }
+
+    .actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .float-left {
+        float: left;
+    }
+
+    .float-right {
+        float: right;
+    }
+</style> --}}
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-white dark:text-gray-200 leading-tight">
@@ -7,226 +177,17 @@
 
     <div class="py-12">
         <!-- component -->
+        @include('components.warden-report')
 
-        <section class=" py-1 bg-blueGray-50">
-            <div class="w-full lg:w-8/12 px-4 mx-auto mt-6">
-                <div
-                    class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
-                    <div class="rounded-t bg-white mb-0 px-6 py-6">
-                        <div class="text-center flex justify-between">
-                            <h6 class="text-blueGray-700 text-xl font-bold">
-                                Incident Report
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="flex-auto px-4 lg:px-10 py-10 pt-0 bg-white">
-                            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-                                Warden Information
-                            </h6>
-                            <div class="flex flex-wrap">
-                                <div class="w-full lg:w-6/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            Warden Dispatched
-                                        </label>
-                                        <input type="text"
-                                            disabled
-                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                            value="{{ $incidentAssessment->warden_dispatched }}">
-                                    </div>
-                                </div>
-                                <div class="w-full lg:w-6/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            Name of Affected
-                                        </label>
-                                        <input type="text"
-                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value="{{ $incident->name_of_affected }}"
-                                        name="name_of_affected"
-                                        disabled>
-                                 
-                                    </div>
-                                </div>
-                                <div class="w-full lg:w-6/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            Animal Responsible
-                                        </label>
-                                        <input type="text"
-                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                            value={{ $incident->compensationAnimal->name }} disabled>
-                                    </div>
-                                </div>
-                                <div class="w-full lg:w-6/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            Date of Incident
-                                        </label>
-                                        <input type="date"
-                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                            value={{ $incident->date_of_incident }} disabled>
-                                    </div>
-                                </div>
-                                <div class="w-full lg:w-6/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            Time of Incident
-                                        </label>
-                                        <input type="text"
-                                            disabled
-                                            name="time_of_incident"
-                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                            value="{{ $incidentAssessment->time_of_incident }}"
-                                            >
-                                    </div>
-                                </div>
-                                <div class="w-full lg:w-6/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                           GPS Coordinates (Latitude)
-                                        </label>
-                                        <input type="text"
-                                            disabled
-                                            name="latitude"
-                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                            value={{ $incidentAssessment->latitude }}  >
-                                    </div>
-                                </div>
-                                <div class="w-full lg:w-6/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            GPS Coordinates (Longitude)
-                                        </label>
-                                        <input type="text"
-                                            disabled
-                                            name="longitude"
-                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                            value={{ $incidentAssessment->longitude }}  >
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr class="mt-6 border-b-1 border-blueGray-300">
-
-                            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-                                Warden's Report
-                            </h6>
-                            <div class="flex flex-wrap">
-                                <div class="w-full lg:w-12/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            Narrative
-                                        </label>
-                                        <textarea type="text"
-                                            disabled
-                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                            rows="4">{{ $incidentAssessment->narrative }}  </textarea>
-                                    </div>
-                                </div>
-                                <div class="w-full lg:w-12/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            Discussion with Community
-                                        </label>
-                                        <textarea type="text"
-                                            disabled
-                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                            rows="4" value={{ $incidentAssessment->discussion_with_community }} >{{ $incidentAssessment->discussion_with_community }} </textarea>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-                                Actions Taken
-                            </h6>
-                            <div class="grid grid-cols-2 gap-4">
-                                <!-- Checkbox 1 -->
-
-                                @if($incidentAssessment->actions_taken)
-                                <ul>
-                                    @foreach($incidentAssessment->actions_taken as $action)
-                                        <li>{{ $action }}</li>
-                                    @endforeach
-                                </ul>
-                            @else
-                                <p>No actions taken recorded.</p>
-                            @endif
-                            
-               
-                            </div>
-                            <hr class="mt-6 border-b-1 border-blueGray-300">
-
-                            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-                                Monitoring and survey of the area
-                            </h6>
-                            <div class="flex flex-wrap">
-                                <div class="w-full lg:w-12/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            Monitoring and survey
-                                        </label>
-                                        <textarea type="text"
-                                            disabled
-                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                            rows="4" value={{ $incidentAssessment->monitoring_and_survey }} >{{ $incidentAssessment->monitoring_and_survey }} </textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="mt-6 border-b-1 border-blueGray-300">
-
-                            <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-                                Evidence
-                            </h6>
-                            <div class="flex flex-wrap">
-                                <div class="w-full lg:w-12/12 px-4">
-                                    <div class="relative w-full mb-3">
-                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                            htmlfor="grid-password">
-                                            Evidence
-                                        </label>
-                                        {{-- @foreach ($incidentAssessment as $attachment) --}}
-                                        <li style="margin-bottom: 0.5rem;">
-                                            <a href="{{ asset('storage/' . $incidentAssessment->evidence_file) }}" target="_blank"
-                                                style="color: inherit; text-decoration: none;">
-                                                {{ $incidentAssessment->evidence_file }}
-                                            </a>
-                                        </li>
-                                    {{-- @endforeach --}}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-6/12 px-4">
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                        htmlfor="grid-password">
-                                        OB Number 
-                                    </label>
-                                    <input type="text"
-                                        disabled
-                                        name="ob_number"
-                                        class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        value={{ $incidentAssessment->ob_number }} >
-                                </div>
-                            </div>
-                            {{-- <button type="submit"id="ad"
-                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                Save
-                            </button> --}}
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="mt-10 flex justify-center">
+            <a href="{{ route('download.incident.report', ['incident_assessment_id' => $incidentAssessment->id]) }}"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download Incident Report</a>
+                {{-- <div class="mt-10 flex justify-center">
+    
+                    <a href="{{ route('claims.crop-damage', ['incident_assessment_id' => $incidentAssessment->id, 'download' => true]) }}"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download
+                        Report</a>
+            </div> --}}
+        </div>
     </div>
 </x-app-layout>

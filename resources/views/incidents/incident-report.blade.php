@@ -119,6 +119,141 @@
                                             placeholder="Longitude" >
                                     </div>
                                 </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                            htmlfor="grid-password">
+                                            Ranger in Charge
+                                        </label>
+                                        <input type="text"
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="ranger_in_charge" placeholder="Enter the name of the ranger in charge">
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" for="mode-of-transport">
+                                            Mode of Transport Used
+                                        </label>
+                                        <select
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="mode_of_transport" id="mode-of-transport">
+                                            <option value="" disabled selected>Select Mode of Transport</option>
+                                            <option value="vehicle">Vehicle</option>
+                                            <option value="motorbike">Motorbike</option>
+                                            <option value="airplane">Airplane</option>
+                                            <option value="boat">Boat</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                            htmlfor="grid-password">
+                                           Number of Vehicles Used
+                                        </label>
+                                        <input type="text"
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="no_vehicle_used" placeholder="Enter the vehicle used">
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                            htmlfor="grid-password">
+                                           Fuel Utilized (Litres)
+                                        </label>
+                                        <input type="text"
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="fuel" placeholder="Enter mileage of vehicle used">
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                            htmlfor="grid-password">
+                                           Number of Rangers
+                                        </label>
+                                        <input type="text"
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="no_rangers" placeholder="Number of rangers">
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" for="no-of-batteries">
+                                            Number of Batteries
+                                        </label>
+                                        <select
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="batteries" id="no-of-batteries">
+                                            <option value="" disabled selected>Select Batteries used</option>
+                                            <option value="all">All</option>
+                                            <option value="gps">GPS</option>
+                                            <option value="spotlight">Spotlight</option>
+                                            <option value="camera">Camera</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                            htmlfor="grid-password">
+                                            Number of combo ration in boxes
+                                        </label>
+                                        <input type="text"
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="combo_rations" placeholder="Number of combo ration in boxes">
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                            htmlfor="grid-password">
+                                            Fresh ration supplementation (KSHS)
+                                        </label>
+                                        <input type="text"
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="fresh_rations" placeholder="Fresh ration supplementation (KSHS)">
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" for="no-of-batteries">
+                                            Ammunition Used
+                                        </label>
+                                        <select
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="ammunition" id="no-of-batteries">
+                                            <option value="" disabled selected>Select Ammunition used</option>
+                                            <option value="thunderflash">None</option>
+                                            <option value="thunderflash">Thunderflash</option>
+                                            <option value="blanks">Blanks</option>
+                                            <option value="live_ammunition">Live Ammunition</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-6/12 px-4">
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                            htmlfor="grid-password">
+                                            Number of rounds
+                                        </label>
+                                        <input type="text"
+                                            required
+                                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                            name="rounds" placeholder="Number of Rounds">
+                                    </div>
+                                </div>
                             </div>
 
                             <hr class="mt-6 border-b-1 border-blueGray-300">
